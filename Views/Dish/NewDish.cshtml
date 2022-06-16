@@ -1,0 +1,39 @@
+@model Dish
+
+<h1>Add a Dish</h1>
+<div>
+    <form asp-controller="Dishes" asp-action="Create" method = "Post">
+        <div>
+        <label asp-for="DishName"></label>
+        <span asp-validation-for="DishName">
+        </span>
+        <input asp-for="DishName">
+    </div>
+    <div>
+        <label asp-for="Calories"></label>
+        <span asp-validation-for="Calories">
+        </span>
+        <input asp-for="Calories">
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <span asp-validation-for="Description">
+        </span>
+        <input asp-for="Description">
+    </div>
+    
+    <div>
+        @* we need to use a partial here *@
+        <label asp-for="ChefId"></label>
+        <span asp-validation-for="ChefId">
+        </span>
+        <input asp-for="ChefId">
+    </div>
+    <div>
+        <label asp-for="Tastiness"></label>
+        <span asp-validation-for="Tastiness">
+        </span>
+        <input asp-for="Tastiness">
+    </div>
+    </form>
+</div>

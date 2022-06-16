@@ -16298,8 +16298,23 @@
   "RootNamespace": "ChefsAndDishes",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\Chef\\NewChef.cshtml",
+      "TargetPath": "Views\\Chef\\NewChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\Dish\\NewDish.cshtml",
+      "TargetPath": "Views\\Dish\\NewDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\Dish\\AllDish.cshtml",
+      "TargetPath": "Views\\Dish\\AllDish.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16320,6 +16335,11 @@
     {
       "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\ChefsAndDishes\\Views\\Chef\\AllChef.cshtml",
+      "TargetPath": "Views\\Chef\\AllChef.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -8,37 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChefsAndDishes
 build_property.RootNamespace = ChefsAndDishes
-build_property.ProjectDir = C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\ChefsAndDishes\
+build_property.ProjectDir = c:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\ChefsAndDishes\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\ChefsAndDishes
+build_property.MSBuildProjectDirectory = c:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\ChefsAndDishes
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Home/Index.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Chef/AllChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxBbGxDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Chef/NewChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxOZXdDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Dish/AllDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBbGxEaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Dish/NewDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXdEaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Home/Privacy.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/Error.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/_ViewImports.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/_ViewStart.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/_Layout.cshtml]
+[c:/Users/tanne/OneDrive/Desktop/CodingDojoFolder/BootcampClass/C\#/ChefsAndDishes/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nfy0wyx8b9
