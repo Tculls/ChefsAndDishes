@@ -14,22 +14,23 @@ public class DishController : Controller
     [HttpGet("/dishes")]
     public IActionResult AllDish()
     {
-        List<Dish> allDishes = _context.Dishes.Include(piss => piss.Creator).ToList();
+        List<Dish> allDishes = _context.Dishes.Include(dish => dish.Creator).ToList();
         return View("AllDish", allDishes);
     }
+
     [HttpPost("AddDish")]
     public IActionResult CreateDish(Dish newDish)
     {
         if (ModelState.IsValid == false)
         {
             return AddDish();
-            
         }
         
             _context.Dishes.Add(newDish);
             _context.SaveChanges();
         return RedirectToAction("AllDish");
     }
+    
     [HttpGet("/dishes/new")]
     public IActionResult AddDish()
     {

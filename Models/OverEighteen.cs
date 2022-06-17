@@ -1,6 +1,6 @@
 
 using System.ComponentModel.DataAnnotations;
-public class DateValidations : ValidationAttribute
+public class OverEighteen : ValidationAttribute
 {
     protected override ValidationResult IsValid(object value, ValidationContext context)
     {

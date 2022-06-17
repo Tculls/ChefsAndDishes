@@ -15,7 +15,7 @@ public class ChefController : Controller
     [HttpGet("/")]
     public IActionResult AllChef()
     {
-        List<Chef> allChefs = _context.Chefs.Include(piss => piss.Dishes).ToList();
+        List<Chef> allChefs = _context.Chefs.Include(chef => chef.Dishes).ToList();
 
         return View("AllChef", allChefs);
     }
@@ -35,7 +35,7 @@ public class ChefController : Controller
         }
     }
     [HttpGet("/new")]
-    public IActionResult AddChef()
+    public IActionResult NewChef()
     {
         return View("NewChef");
     }

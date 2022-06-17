@@ -15,7 +15,8 @@ public class Chef
     public string LastName {get; set; }
 
     [Required]
-    [DateValidations(ErrorMessage =" Poingo ssa")]
+    [OverEighteen(ErrorMessage =" Poingo ssa")]
+    
     public DateTime BirthDate {get; set; }
 
     public List<Dish> Dishes {get; set; } = new List<Dish>();
