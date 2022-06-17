@@ -11,20 +11,23 @@ public class ChefController : Controller
         _context = context;
     }
 
-    [HttpGet("/")]
-    public IActionResult New()
+    [HttpGet("/All")]
+    public IActionResult AllChef()
     {
-        return View("AllChef");
+        List<Chef> allChefs = _context.Chefs.ToList();
+
+        return View("AllChef", allChefs);
     }
     [HttpPost("/new")]
     public IActionResult Create(Chef newChef)
     {
         if (ModelState.IsValid == false)
         {
-            return New();
+            return AllChef();
         }
         _context.Chefs.Add(newChef);
         _context.SaveChanges();
         return RedirectToAction("AllChef");
     }
+
 }

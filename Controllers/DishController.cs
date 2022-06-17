@@ -27,4 +27,10 @@ public class DishController : Controller
 
         return RedirectToAction("AllDish");
     }
+    [HttpGet("/dishes")]
+    public IActionResult All()
+    {
+        List<Dish> allDishes = _context.Dishes.ToList();
+        return View("AllDish", allDishes);
+    }
 }
