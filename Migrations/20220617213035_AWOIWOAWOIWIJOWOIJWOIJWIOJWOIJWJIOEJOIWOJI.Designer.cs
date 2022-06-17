@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChefsAndDishes.Migrations
 {
     [DbContext(typeof(ORMContext))]
-    [Migration("20220616221655_ChefandDish")]
-    partial class ChefandDish
+    [Migration("20220617213035_AWOIWOAWOIWIJOWOIJWOIJWIOJWOIJWJIOEJOIWOJI")]
+    partial class AWOIWOAWOIWIJOWOIJWOIJWIOJWOIJWJIOEJOIWOJI
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,8 +27,8 @@ namespace ChefsAndDishes.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("BirthDate")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -80,7 +80,25 @@ namespace ChefsAndDishes.Migrations
 
                     b.HasKey("DishId");
 
+                    b.HasIndex("ChefId");
+
                     b.ToTable("Dishes");
+                });
+
+            modelBuilder.Entity("Dish", b =>
+                {
+                    b.HasOne("Chef", "Creator")
+                        .WithMany("Dishes")
+                        .HasForeignKey("ChefId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Creator");
+                });
+
+            modelBuilder.Entity("Chef", b =>
+                {
+                    b.Navigation("Dishes");
                 });
 #pragma warning restore 612, 618
         }

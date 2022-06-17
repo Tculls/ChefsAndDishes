@@ -2,7 +2,7 @@
 
 <h1>Add a Dish</h1>
 <div>
-    <form asp-controller="Dishes" asp-action="Create" method = "Post">
+    <form asp-controller="Dish" asp-action="CreateDish" method = "Post">
         <div>
         <label asp-for="DishName"></label>
         <span asp-validation-for="DishName">
@@ -27,10 +27,12 @@
         <label asp-for="ChefId"></label>
         <span asp-validation-for="ChefId">
         </span>
-        @foreach(Chef chef in ViewBag.AllChef)
+        <select asp-for="ChefId">
+        @foreach(Chef chef in ViewBag.allChefs)
         {
             <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
         }
+        </select>
     </div>
     <div>
         <label asp-for="Tastiness"></label>

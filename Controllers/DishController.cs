@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ChefsAndDishes.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class DishController : Controller
 {
@@ -11,26 +12,29 @@ public class DishController : Controller
     }
 
     [HttpGet("/dishes")]
-    public IActionResult New()
+    public IActionResult AllDish()
     {
-        return View("AllDish");
+        List<Dish> allDishes = _context.Dishes.Include(piss => piss.Creator).ToList();
+        return View("AllDish", allDishes);
     }
-    [HttpPost("dishes/new")]
-    public IActionResult Create(Dish newDish)
+    [HttpPost("AddDish")]
+    public IActionResult CreateDish(Dish newDish)
     {
         if (ModelState.IsValid == false)
         {
-            return View("AllDish");
+            return AddDish();
+            
         }
-        _context.Dishes.Add(newDish);
-        _context.SaveChanges();
-
+        
+            _context.Dishes.Add(newDish);
+            _context.SaveChanges();
         return RedirectToAction("AllDish");
     }
-    [HttpGet("/dishes")]
-    public IActionResult All()
+    [HttpGet("/dishes/new")]
+    public IActionResult AddDish()
     {
-        List<Dish> allDishes = _context.Dishes.ToList();
-        return View("AllDish", allDishes);
+        List<Chef> allChefs = _context.Chefs.ToList();
+        ViewBag.allChefs = allChefs;
+        return View("NewDish");
     }
 }

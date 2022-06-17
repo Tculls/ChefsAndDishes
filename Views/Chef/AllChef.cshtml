@@ -1,11 +1,8 @@
 @model List<Chef>
 
-<h2>Chefs | <a
-asp-controller="Dishes"
-asp-action="Dishes"
-asp-route-postId=""
+<h2>Chefs | <a href="/dishes"
 >Dishes</a></h2>
-<p><a>Add a Chef</a></p>
+<p><a href="/new">Add a Chef</a></p>
 
 <h1>Check out our roster of Chefs!</h1>
 <table>
@@ -21,8 +18,8 @@ asp-route-postId=""
         
         <tr>
             <td>@chef.FirstName @chef.LastName</td>
-            <td>@chef.BirthDate</td>
-            <td>@chef.Dishes</td>
+            <td>@(DateTime.Now.Year - chef.BirthDate.Year)</td>
+            <td>@chef.Dishes.Count</td>
         </tr>
 
 }

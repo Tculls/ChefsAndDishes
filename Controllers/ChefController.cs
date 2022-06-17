@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ChefsAndDishes.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class ChefController : Controller
 
@@ -11,23 +12,32 @@ public class ChefController : Controller
         _context = context;
     }
 
-    [HttpGet("/All")]
+    [HttpGet("/")]
     public IActionResult AllChef()
     {
-        List<Chef> allChefs = _context.Chefs.ToList();
+        List<Chef> allChefs = _context.Chefs.Include(piss => piss.Dishes).ToList();
 
         return View("AllChef", allChefs);
     }
-    [HttpPost("/new")]
-    public IActionResult Create(Chef newChef)
+    [HttpPost("/AddChef")]
+    public IActionResult CreateChef(Chef newChef)
     {
         if (ModelState.IsValid == false)
         {
-            return AllChef();
+        return View("NewChef");
         }
+        else
+        {           
         _context.Chefs.Add(newChef);
         _context.SaveChanges();
+        
         return RedirectToAction("AllChef");
+        }
+    }
+    [HttpGet("/new")]
+    public IActionResult AddChef()
+    {
+        return View("NewChef");
     }
 
 }

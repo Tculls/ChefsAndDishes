@@ -2,7 +2,7 @@
 
 <h1>Add a Chef!</h1>
 <div>
-<form asp-controller="Chefs" asp-action="Create" method = "Post">
+<form asp-controller="Chef" asp-action="CreateChef" method = "Post">
     <div>
         <label asp-for="FirstName"></label>
         <span asp-validation-for="FirstName">
@@ -17,6 +17,7 @@
     </div>
         <div>
         <label asp-for="BirthDate"></label>
+        <span asp-validation-for="BirthDate"></span>
         <input type="date" asp-for="BirthDate">
         
     </div>
