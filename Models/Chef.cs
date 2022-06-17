@@ -19,6 +19,7 @@ public class Chef
     [DateValidations]
     public int BirthDate {get; set; }
 
+    public List<Dish> Dishes {get; set; } 
     public DateTime CreatedAt {get; set; } = DateTime.Now;
     public DateTime UpdatedAt {get; set; } = DateTime.Now;
 }

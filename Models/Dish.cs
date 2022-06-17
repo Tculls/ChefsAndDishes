@@ -24,6 +24,7 @@ public class Dish
     public int Tastiness {get; set; }
 
     public int ChefId {get; set; }
+    public Chef Creator {get; set; }
     public DateTime CreatedAt {get; set; } = DateTime.Now;
     public DateTime UpdatedAt {get; set; } = DateTime.Now;
 }

@@ -1,0 +1,32 @@
+@model List<Dish>
+
+<h2><a>Chefs</a> | Dishes</h2>
+<p><a>Add a Dish</a></p>
+
+<h1>Take a look at our tasty dishes!</h1>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+
+@foreach (Dish dish in Model)
+{
+
+        <tr>
+            <td>@dish.DishName</td>
+            <td>@dish.Creator.FirstName @dish.Creator.LastName</td>
+            <td>@dish.Tastiness</td>
+            <td>@dish.Calories</td>
+        </tr>
+    
+    
+}
+    </tbody>
+</table>

@@ -1,20 +1,30 @@
-@model Chef
+@model List<Chef>
+
+<h2>Chefs | <a
+asp-controller="Dishes"
+asp-action="Dishes"
+asp-route-postId=""
+>Dishes</a></h2>
+<p><a>Add a Chef</a></p>
 
 <h1>Check out our roster of Chefs!</h1>
+<table>
+<thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th># of Dishes</th>
+</thead>
 
 @foreach (Chef chef in Model)
 {
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th># of Dishes</th>
-        </tr>
-        <tr>
-            <td>@Chef.FirstName @Chef.LastName</td>
-            <td>@Chef.Birthdate</td>
-            <td>@Chef.Dishes</td>
-        </tr>
-    </table>
     
+        
+        <tr>
+            <td>@chef.FirstName @chef.LastName</td>
+            <td>@chef.BirthDate</td>
+            <td>@chef.Dishes</td>
+        </tr>
+
 }
+    <tbody>
+</table>
