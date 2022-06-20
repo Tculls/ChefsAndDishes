@@ -5,7 +5,7 @@ public class OverEighteen : ValidationAttribute
     protected override ValidationResult IsValid(object value, ValidationContext context)
     {
         DateTime _dateJoin = Convert.ToDateTime(value);
-        if (_dateJoin < DateTime.Now)
+        if (_dateJoin.AddYears(18) < DateTime.Now)
         {
             return ValidationResult.Success;
         }
